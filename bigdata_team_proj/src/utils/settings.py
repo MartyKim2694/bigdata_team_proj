@@ -6,9 +6,9 @@ class Settings(BaseSettings):
     GEMINI_MODEL_NAME: str = "gemini-2.5-flash"
 
     # DART / NAVER
-    DART_API_KEY: str = "dd86489dc31f8aadc2a245bcdd92586dc9a5fd2a"
-    NAVER_CLIENT_ID: str
-    NAVER_CLIENT_SECRET: str
+    DART_API_KEY: str        
+    NAVER_CLIENT_ID: str | None = None
+    NAVER_CLIENT_SECRET: str | None = None
 
     # Search
     ELASTICSEARCH_HOST: str = "http://localhost:9200"
